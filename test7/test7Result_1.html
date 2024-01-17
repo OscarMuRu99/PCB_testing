@@ -15,14 +15,22 @@
 
         <div id="test7">
             <h1>Test 7 - Part 1: Dosing pump activation with magnetic switch.</h1>
-            <div id="test6Result">
+            <div id="test7Result">
                 <h2>Expected results.</h2>
                 <ol>
-                    <li><P>Pump must be activated and current should be displayed on the serial monitor</P></li>
+                    <li><P>LED 1 should turn ON</P></li>
+                    <li><P>Peristaltic pump should be ON</P></li>
                 </ol>
-                <button onclick="location.href=`../index.html`" id="nextButton">Finish Test</button>
+                <button onclick="redirectToOtherPage()" id="nextButton">Finish Test</button>
             </div>
         </div>
         <script src="../particle.js"></script>
+        <script>
+            // Function to redirect to the other page with a parameter
+            function redirectToOtherPage() {
+              // Add a parameter to the URL indicating the button was pressed
+              window.location.href = '../index.html?buttonPressed=true';
+            }
+        </script>
     </body>
 </html>

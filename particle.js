@@ -108,3 +108,18 @@ particlesJS('particles-js', {
             },
             retina_detect: true
         });
+
+// Function to change the color of the link
+function changeLinkColor() {
+    // Find the link element by its ID
+    var linkElement = document.getElementById("test3Link");
+  
+    // Check if the link element is found
+    if (linkElement) {
+      // Change the color of the link (you can set any color you want)
+      linkElement.style.color = "green"; // Change to the desired color
+    } else {
+      console.error("Link element not found");
+    }
+}
+  
