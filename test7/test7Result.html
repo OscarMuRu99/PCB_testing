@@ -1,4 +1,4 @@
-<!--Step 8 from test 7-->
+<!--Results from test 7-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,14 +15,13 @@
 
         <div id="test7">
             <h1>Test 7 - Part 1: Dosing pump activation with magnetic switch.</h1>
-            <div id="test6step8">
-                <p>Step 8:</p>
+            <div id="test7Result">
+                <h2>Expected results.</h2>
                 <ol>
-                    <li><p>Close the J9 magnetic switch to send a signal to the ESP32.</p></li>
-                    <li><p>The servo motor and the peristaltic pump should turn on simultaneously.</p></li>
+                    <li><P>LED 1 should turn ON</P></li>
+                    <li><P>Peristaltic pump should be ON</P></li>
                 </ol>
-                <button onclick="location.href=`./step7.html`" id="backButton">Previous Step</button>
-                <button onclick="location.href=`./test7Result.html`" id="nextButton">Next Step</button>
+                <button onclick="location.href=`../index.html`" id="nextButton">Finish Test</button>
             </div>
         </div>
         <script src="../particle.js"></script>

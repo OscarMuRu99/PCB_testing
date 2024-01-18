@@ -16,13 +16,14 @@
         <div id="homePage" class="container">
             <h1>Welcome to PCB Testing</h1>
             <ul>
-                <li><a href="#" id="test1Link">Test 1: Power source check</a></li>
-                <li><a href="#" id="test2Link">Test 2: 5V Fan, 12V Fan and Servo Motor correct functionality</a></li>
+                <li><a href="./test1/test1Resources.html" id="test1Link">Test 1: Power source check</a></li>
+                <li><a href="./test2/test2Home.html" id="test2Link">Test 2: 5V Fan, 12V Fan and Servo Motor correct functionality</a></li>
                 <li><a href="./test3/test3Resources.html" id="test3Link">Test 3: Testing pressure sensors</a></li>
                 <li><a href="./test4/test4Resources.html" id="test4Link">Test 4: Battery reading</a></li>
                 <li><a href="./test5/test5Resources.html" id="test5Link">Test 5: Calibrating LM35</a></li>
                 <li><a href="./test6/test6Resources.html" id="test6Link">Test 6: Testing pump</a></li>
-                <li><a href="./test7/test7Resources.html" id="test7Link">Test 7: Peristaltic pump functionality</a></li>
+                <li><a href="./test7/test7Resources.html" id="test7Link">Test 7: Peristaltic pump functionality - Part 1</a></li>
+                <li><a href="./test8/test8Resources.html" id="test8Link">Test 8: Peristaltic pump functionality - Part 2</a></li>
                 <!-- Add more tests as needed -->
             </ul>
             <button onclick="restartEverything()" id="nextButton">Restart Everything</button> 
@@ -30,18 +31,5 @@
         
         <!-- Particle.js Initialization Script -->
         <script src="particle.js"></script>
-        <script>
-            // Function to check for the parameter and change link color
-            window.onload = function () {
-              // Get the URL parameters
-              const urlParams = new URLSearchParams(window.location.search);
-              
-              // Check if the "buttonPressed" parameter is present
-              if (urlParams.has('buttonPressed')) {
-                // Call the function to change link color
-                changeLinkColor();
-              }
-            }
-        </script>
     </body>
 </html>

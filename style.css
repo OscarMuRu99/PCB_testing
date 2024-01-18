@@ -146,7 +146,7 @@ body, html {
 }
 
 /* Style for the container div with IDs "test1" to "test7" */
-#test1, #test2, #test3, #test4, #test5, #test6, #test7 {
+#test1, #test2, #test3, #test4, #test5, #test6, #test7, #test8 {
   max-width: 600px; /* Adjust the max-width as per your design */
   padding: 20px;
   background-color: #f8f8f8;
@@ -156,22 +156,23 @@ body, html {
 }
 
 /* Style for the heading text within the container */
-#test1 h1, #test2 h1, #test3 h1, #test4 h1, #test5 h1, #test6 h1, #test7 h1 {
+#test1 h1, #test2 h1, #test3 h1, #test4 h1, #test5 h1, #test6 h1, #test7 h1, #test8 h1 {
   color: #333;
   font-size: 24px;
   margin-bottom: 15px;
 }
 
 /* Style for the paragraph text within the container */
-#test1 p, #test2 p, #test3 p, #test4 p, #test5 p, #test6 p, #test7 p {
-  color: #555;
-  font-size: 16px;
+#test1 p, #test2 p, #test3 p, #test4 p, #test5 p, #test6 p, #test7 p, #test8 p {
+  color: #060071;
+  font-size: 17px;
+  font-weight: 600;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 /* Style for the unordered list within the container */
-#test1 ul, #test2 ul, #test3 ul, #test4 ul, #test5 ul, #test6 ul, #test7 ul {
+#test1 ul, #test2 ul, #test3 ul, #test4 ul, #test5 ul, #test6 ul, #test7 ul, #test8 ul {
   list-style-type: square;
   color: #007bff; /* Change the color as per your preference */
   margin-left: 20px;
@@ -179,12 +180,12 @@ body, html {
 }
 
 /* Style for list items within the container */
-#test1 li, #test2 li, #test3 li, #test4 li, #test5 li, #test6 li, #test7 li {
+#test1 li, #test2 li, #test3 li, #test4 li, #test5 li, #test6 li, #test7 li, #test8 li {
   margin-bottom: 8px;
 }
 
 /* Style for the ordered list within the container */
-#test1 ol, #test2 ol, #test3 ol, #test4 ol, #test5 ol, #test6 ol, #test7 ol {
+#test1 ol, #test2 ol, #test3 ol, #test4 ol, #test5 ol, #test6 ol, #test7 ol, #test8 ol {
   list-style-type: decimal;
   color: #000000; /* Change the color as per your preference */
   margin-left: 20px;
@@ -193,15 +194,15 @@ body, html {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  #test1, #test2, #test3, #test4, #test5, #test6, #test7 {
+  #test1, #test2, #test3, #test4, #test5, #test6, #test7, #test8 {
     padding: 15px;
   }
 
-  #test1 h1, #test2 h1, #test3 h1, #test4 h1, #test5 h1, #test6 h1, #test7 h1 {
+  #test1 h1, #test2 h1, #test3 h1, #test4 h1, #test5 h1, #test6 h1, #test7 h1, #test8 h1 {
     font-size: 20px;
   }
 
-  #test1 p, #test2 p, #test3 p, #test4 p, #test5 p, #test6 p, #test7 p {
+  #test1 p, #test2 p, #test3 p, #test4 p, #test5 p, #test6 p, #test7 p, #test8 p {
     font-size: 14px;
   }
 }

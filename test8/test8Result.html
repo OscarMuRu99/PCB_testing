@@ -1,4 +1,4 @@
-<!--Results from test 7-->
+<!--Results from test 8-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,24 +13,17 @@
         <!-- Particle.js Container -->
         <div id="particles-js"></div>
 
-        <div id="test7">
-            <h1>Test 7 - Part 1: Dosing pump activation with magnetic switch.</h1>
-            <div id="test7Result">
+        <div id="test8">
+            <h1>Test 8 - Part 2: Dosing pump activation with push button.</h1>
+            <div id="test8Result">
                 <h2>Expected results.</h2>
                 <ol>
                     <li><P>LED 1 should turn ON</P></li>
                     <li><P>Peristaltic pump should be ON</P></li>
                 </ol>
-                <button onclick="redirectToOtherPage()" id="nextButton">Finish Test</button>
+                <button onclick="location.href=`../index.html`" id="nextButton">Finish Test</button>
             </div>
         </div>
         <script src="../particle.js"></script>
-        <script>
-            // Function to redirect to the other page with a parameter
-            function redirectToOtherPage() {
-              // Add a parameter to the URL indicating the button was pressed
-              window.location.href = '../index.html?buttonPressed=true';
-            }
-        </script>
     </body>
 </html>
