@@ -1,4 +1,4 @@
-<!--Test 1 resources-->
+<!--Results from test 1_3-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,19 +13,18 @@
         <!-- Particle.js Container -->
         <div id="particles-js"></div>
 
-        <!-- Particle.js Initialization Script -->
-        <script src="../../particle.js"></script>
-        
         <div id="test1">
-            <h1>Resources</h1>
-            <div id="test1Resources">
-                <p>Required materials:</p>
+            <h1>Test 1_4: Buck Converter 5V_ISO -> 3.3V_ISO.</h1>
+            <div id="test1Result">
+                <h2>Expected results.</h2>
                 <ol>
-                    <li><p>Digital Multimeter.</p></li>
+                    <li><P>The multimeter should show a voltage near 5V.</P></li>
+                    <li><P>LED7 turned ON.</P></li>
                 </ol>
-                <button onclick="location.href='../test1Home.html'" id="backButton">Back</button>
-                <button onclick="location.href='./step1.html'" id="nextButton">Start Test</button>
+                <button onclick="location.href=`./step3.html`" id="backButton">Previous Step</button>
+                <button onclick="location.href=`../../index.html`" id="nextButton">Finish Test</button>
             </div>
         </div>
+        <script src="../../particle.js"></script>
     </body>
 </html>
