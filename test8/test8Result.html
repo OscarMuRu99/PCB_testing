@@ -1,29 +1,28 @@
-<!--Results from test 8-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PCB Testing</title>
-        <link rel="stylesheet" href="../style.css">
-        <!-- Include Particle.js library -->
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    </head>
-    <body>
-        <!-- Particle.js Container -->
-        <div id="particles-js"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Selector - Page 2</title>
+</head>
+<body>
+    <h1>Page 2</h1>
+    <p>The selected color from Page 1 is:</p>
+    <div id="colorDisplay"></div>
+    <script>
+        function getCookie(name) {
+            const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            if (match) return match[2];
+        }
 
-        <div id="test8">
-            <h1>Test 8 - Part 2: Dosing pump activation with push button.</h1>
-            <div id="test8Result">
-                <h2>Expected results.</h2>
-                <ol>
-                    <li><P>LED 1 should turn ON</P></li>
-                    <li><P>Peristaltic pump should be ON</P></li>
-                </ol>
-                <button onclick="location.href=`../index.html`" id="nextButton">Finish Test</button>
-            </div>
-        </div>
-        <script src="../particle.js"></script>
-    </body>
+        const selectedColor = getCookie('selectedColor');
+
+        if (selectedColor) {
+            const colorDisplay = document.getElementById('colorDisplay');
+            colorDisplay.style.backgroundColor = selectedColor;
+            colorDisplay.innerHTML = `<strong>${selectedColor}</strong>`;
+        }
+    </script>
+    <a href="index.html">Go back to Page 1</a>
+</body>
 </html>

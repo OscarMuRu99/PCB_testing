@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="style.css">
         <!-- Include Particle.js library -->
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <link rel="shortcut icon" href="logo.png">
+        <link rel="apple-touch-icon" href="logo.png">
     </head>
     <body>
         <!-- Particle.js Container -->
@@ -28,8 +30,49 @@
             </ul>
             <button onclick="restartEverything()" id="nextButton">Restart Everything</button> 
         </div>
+        <div id="logo">
+            <img src="logo.png">
+        </div>
+        <div id="creator">
+            <p>Made by: Oscar Muñoz</p>
+        </div>
         
         <!-- Particle.js Initialization Script -->
         <script src="particle.js"></script>
+        <script>
+            // Check if the cookie is set and apply the completed class
+            document.addEventListener('DOMContentLoaded', function () {
+              if (getCookie('linkCompleted')) {
+                document.getElementById('myLink').classList.add('completed');
+              }
+            });
+        
+            // Function to set a cookie
+            function setCookie(name, value, days) {
+              var expires = '';
+              if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = '; expires=' + date.toUTCString();
+              }
+              document.cookie = name + '=' + value + expires + '; path=/';
+            }
+        
+            // Function to get a cookie
+            function getCookie(name) {
+              var nameEQ = name + '=';
+              var cookies = document.cookie.split(';');
+              for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                while (cookie.charAt(0) == ' ') {
+                  cookie = cookie.substring(1, cookie.length);
+                }
+                if (cookie.indexOf(nameEQ) == 0) {
+                  return cookie.substring(nameEQ.length, cookie.length);
+                }
+              }
+              return null;
+            }
+          </script>
     </body>
 </html>
